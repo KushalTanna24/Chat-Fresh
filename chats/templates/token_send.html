@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Chat&Fresh</title>
+    <script type="text/javascript">
+        var bgcount = 6;
+
+        function changebg() {
+            // var num = Math.ceil(Math.random() * bgcount);
+            document.body.style.backgroundImage = 'url(https://source.unsplash.com/1600x800/?nature,land,sky,forest,flower)';
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}" />
+</head>
+
+<body onload="changebg();">
+    <div class="login-form bg">
+        <form action="" method="post">
+            <!-- <div class="avatar"><i class="material-icons">&#xE7FF;</i></div> -->
+            <h4 class="modal-title">We have sent an email to you</h4>
+            <!-- <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password" required="required">
+            </div>
+            <div class="form-group small clearfix">
+                <a href="#" class="forgot-link">Forgot Password?</a>
+            </div> -->
+            <!-- <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login"> -->
+        </form>
+        <div class="text-center small"> Please check your mail</div>
+    </div>
+</body>
+
+</html>
